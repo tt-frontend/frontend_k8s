@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spa
+  labels:
+    app: spa
+spec:
+  replicas: 1
+  strategy:
+    type: spa
+  selector:
+    matchLabels:
+      app: spa
+  template:
+    metadata:
+      labels:
+        app: spa
+    spec:
+      containers:
+      - name: spa
+        image: spa_image_name
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+      restartPolicy: Always

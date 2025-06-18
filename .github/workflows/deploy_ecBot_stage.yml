@@ -1,0 +1,13 @@
+name: Deploy spa stage
+
+on:
+  workflow_dispatch:
+        
+jobs:
+  call_deploy_workflow:
+    if: |
+      !cancelled()
+    uses: ./.github/workflows/deploy.yml
+    with:
+      deploy_script_name: spa/stage
+    secrets: inherit
