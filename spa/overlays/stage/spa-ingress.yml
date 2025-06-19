@@ -8,9 +8,6 @@ metadata:
     ingress.alb.yc.io/external-ipv4-address: 51.250.3.196
     ingress.alb.yc.io/group-name: frontend
 spec:
-  tls:
-    - hosts:
-        - stage.my.ttplatform.ru
   rules:
     - host: stage.my.ttplatform.ru
       http:
