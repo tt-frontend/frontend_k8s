@@ -17,9 +17,9 @@ spec:
         app: spa
     spec:
       containers:
-      - name: spa
-        image: spa_image_name
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 80
+        - name: spa
+          image: spa_image_name
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
       restartPolicy: Always
