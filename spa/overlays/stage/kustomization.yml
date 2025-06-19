@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: stage
 resources:
 - ../../base/
+- spa-ingres.yaml
 
 patches:
   - path: spa-deployment.yml
