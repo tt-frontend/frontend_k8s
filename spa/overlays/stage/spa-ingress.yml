@@ -11,6 +11,7 @@ spec:
   tls:
     - hosts:
         - stage.my.ttplatform.ru
+      secretName: yc-certmgr-cert-id-fpqsn9gl2vrb7s260bcc
   rules:
     - host: stage.my.ttplatform.ru
       http:
