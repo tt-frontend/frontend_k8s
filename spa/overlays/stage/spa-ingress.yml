@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: spa
   annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
     ingress.alb.yc.io/subnets: e9b98k3hqkb4fkcsu7hs
     ingress.alb.yc.io/external-ipv4-address: 51.250.3.196
     ingress.alb.yc.io/group-name: frontend

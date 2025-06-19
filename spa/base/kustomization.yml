@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
 - spa-deployment.yml
 - spa-service.yml
-- spa-ingress.yml
   
