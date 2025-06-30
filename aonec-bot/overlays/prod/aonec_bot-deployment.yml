@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aonec_bot
+  name: aonec-bot
 spec:
   template:
     spec:
       containers:
-        - name: aonec_bot
+        - name: aonec-bot
           image: aonec_bot_image_name
           resources:
             requests:

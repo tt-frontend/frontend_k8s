@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aonec_bot
+  name: aonec-bot
   labels:
-    app: aonec_bot
+    app: aonec-bot
 spec:
   replicas: 1
   strategy:
     type: Recreate
   selector:
     matchLabels:
-      app: aonec_bot
+      app: aonec-bot
   template:
     metadata:
       labels:
-        app: aonec_bot
+        app: aonec-bot
     spec:
       containers:
         - name: aonec_bot

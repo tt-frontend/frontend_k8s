@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: aonec_bot
+  name: aonec-bot
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     ingress.alb.yc.io/subnets: e9b98k3hqkb4fkcsu7hs
@@ -13,13 +13,13 @@ spec:
         - bot.ttplatform.ru
       secretName: yc-certmgr-cert-id-fpql066f1np15cmp0f4t
   rules:
-    - host: test.ru
+    - host: bot.ttplatform.ru
       http:
         paths:
           - pathType: Prefix
             path: "/"
             backend:
               service:
-                name: aonec_bot
+                name: aonec-bot
                 port:
                   number: 80
