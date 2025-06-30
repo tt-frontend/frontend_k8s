@@ -17,7 +17,7 @@ spec:
         app: aonec-bot
     spec:
       containers:
-        - name: aonec_bot
+        - name: aonec-bot
           image: aonec_bot_image_name
           imagePullPolicy: Always
           ports:
