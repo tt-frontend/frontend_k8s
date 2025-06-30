@@ -11,4 +11,4 @@ patches:
 images:
   - name: spa_image_name
     newName: cr.yandex/crpnm76utfphmac4qo1t/spa
-    newTag: latest
+    newTag: 0.1.1
