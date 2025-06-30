@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: readings-bot
+  labels:
+    app: readings-bot
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: readings-bot
+  template:
+    metadata:
+      labels:
+        app: readings-bot
+    spec:
+      containers:
+        - name: readings-bot
+          image: readings-bot_image_name
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always

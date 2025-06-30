@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: readings-bot
+  name: readings-bot
+spec:
+  ports:
+    - name: "http"
+      port: 80
+      targetPort: 80
+  type: NodePort
+  selector:
+    app: readings-bot
