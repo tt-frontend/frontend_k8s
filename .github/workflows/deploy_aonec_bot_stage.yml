@@ -1,4 +1,4 @@
-name: Deploy aonec_bot stage
+name: Deploy aonec_bot prod
 
 on:
   workflow_dispatch:
@@ -9,5 +9,5 @@ jobs:
       !cancelled()
     uses: ./.github/workflows/deploy.yml
     with:
-      deploy_script_name: aonec_bot/stage
+      deploy_script_name: aonec_bot/prod
     secrets: inherit
