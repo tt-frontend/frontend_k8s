@@ -8,6 +8,10 @@ metadata:
     ingress.alb.yc.io/external-ipv4-address: 51.250.3.196
     ingress.alb.yc.io/group-name: ttm
 spec:
+  tls:
+    - hosts:
+        - bot.ttplatform.ru
+      secretName: yc-certmgr-cert-id-fpql066f1np15cmp0f4t
   rules:
     - host: test.ru
       http:
