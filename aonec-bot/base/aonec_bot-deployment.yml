@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: aonec-bot
-          image: aonec_bot_image_name
+          image: aonec-bot_image_name
           imagePullPolicy: Always
           ports:
             - containerPort: 80

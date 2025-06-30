@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: aonec-bot
-          image: aonec_bot_image_name
+          image: aonec-bot_image_name
           resources:
             requests:
               memory: "128Mi"
