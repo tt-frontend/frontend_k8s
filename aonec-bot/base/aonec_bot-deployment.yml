@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aonec_bot
+  labels:
+    app: aonec_bot
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: aonec_bot
+  template:
+    metadata:
+      labels:
+        app: aonec_bot
+    spec:
+      containers:
+        - name: aonec_bot
+          image: aonec_bot_image_name
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always

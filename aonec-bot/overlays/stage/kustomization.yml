@@ -3,12 +3,12 @@ kind: Kustomization
 namespace: stage
 resources:
 - ../../base/
-- spa-ingress.yml
+- aonec_bot-ingress.yml
 
 patches:
-  - path: spa-deployment.yml
+  - path: aonec_bot-deployment.yml
 
 images:
-  - name: spa_image_name
-    newName: cr.yandex/crpnm76utfphmac4qo1t/spa
+  - name: aonec_bot_image_name
+    newName: cr.yandex/crpnm76utfphmac4qo1t/aonec_bot
     newTag: latest
