@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: spa
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    ingress.alb.yc.io/subnets: e9b98k3hqkb4fkcsu7hs
+    ingress.alb.yc.io/external-ipv4-address: 51.250.3.196
+    ingress.alb.yc.io/group-name: ttm
+spec:
+  tls:
+    - hosts:
+        - my.ttplatform.ru
+      secretName: yc-certmgr-cert-id-fpqo5lio2abrul1e1e0p
+  rules:
+    - host: my.ttplatform.ru
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: spa
+                port:
+                  number: 80
