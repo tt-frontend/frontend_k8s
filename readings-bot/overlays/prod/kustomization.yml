@@ -11,4 +11,4 @@ patches:
 images:
   - name: readings-bot_image_name
     newName: cr.yandex/crpnm76utfphmac4qo1t/readings-bot
-    newTag: main
+    newTag: 0.0.2
