@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.YCDEPLOYUSERNAME_AONEC }}
           key: ${{ secrets.YCDEPLOYUSERSERT_AONEC }}
           script: |
-            cd /home/deploy/deploy_scripts
+            cd /home/aonecroot/deploy_scripts
             ./${{ inputs.deploy_script_name }}
