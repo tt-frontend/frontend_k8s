@@ -10,5 +10,5 @@ patches:
 
 images:
   - name: aonec-bot_image_name
-    newName: cr.yandex/crpnm76utfphmac4qo1t/aonec-bot
-    newTag: 0.2.13
+    newName: cr.yandex/crp7c1crhqf81ppp32bp/aonec-bot
+    newTag: 0.2.14

@@ -7,7 +7,7 @@ jobs:
   call_deploy_workflow:
     if: |
       !cancelled()
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/deploy_aonec.yml
     with:
       deploy_script_name: aonec_bot/prod
     secrets: inherit

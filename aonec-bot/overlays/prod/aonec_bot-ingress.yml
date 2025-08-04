@@ -4,16 +4,16 @@ metadata:
   name: aonec-bot
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    ingress.alb.yc.io/subnets: e9b98k3hqkb4fkcsu7hs
-    ingress.alb.yc.io/external-ipv4-address: 51.250.3.196
-    ingress.alb.yc.io/group-name: ttm
+    ingress.alb.yc.io/subnets: fl8hudiu88nghctpeh47
+    ingress.alb.yc.io/external-ipv4-address: 51.250.41.131
+    ingress.alb.yc.io/group-name: ecbot
 spec:
   tls:
     - hosts:
-        - bot.engineeringcentre.ru
-      secretName: yc-certmgr-cert-id-fpqos07dh6fn863tkpqo
+        - bot.aonec-bot.ru
+      secretName: yc-certmgr-cert-id-fpqinj4jom0rala85m7b
   rules:
-    - host: bot.engineeringcentre.ru
+    - host: bot.aonec-bot.ru
       http:
         paths:
           - pathType: Prefix
