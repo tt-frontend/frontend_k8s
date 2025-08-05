@@ -22,4 +22,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: aonec-env
       restartPolicy: Always
