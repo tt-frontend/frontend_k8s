@@ -11,7 +11,7 @@ patches:
 images:
   - name: aonec-bot_image_name
     newName: cr.yandex/crp7c1crhqf81ppp32bp/aonec-bot
-    newTag: 1.1.12
+    newTag: 1.1.13
 
 configMapGenerator:
   - name: aonec-env
