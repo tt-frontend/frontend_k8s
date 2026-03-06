@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'aonec_bot/overlays/prod/**'
         
 jobs:
   call_deploy_workflow:

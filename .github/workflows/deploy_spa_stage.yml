@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'spa/overlays/stage/**'
         
 jobs:
   call_deploy_workflow:
