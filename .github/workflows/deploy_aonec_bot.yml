@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'aonec_bot/overlays/prod/**'
+      - 'aonec-bot/overlays/prod/**'
         
 jobs:
   call_deploy_workflow:
