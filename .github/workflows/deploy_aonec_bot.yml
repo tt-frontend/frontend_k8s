@@ -1,6 +1,7 @@
 name: Deploy aonec_bot prod
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
