@@ -12,7 +12,7 @@ images:
   - name: aonec-bot_image_name
     newName: cr.yandex/crp7c1crhqf81ppp32bp/aonec-bot
     newTag: 1.2.4
-
+    
 configMapGenerator:
   - name: aonec-env
     envs:
