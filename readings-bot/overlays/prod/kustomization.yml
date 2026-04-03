@@ -12,3 +12,8 @@ images:
   - name: readings-bot_image_name
     newName: cr.yandex/crpnm76utfphmac4qo1t/readings-bot
     newTag: 0.0.3
+
+configMapGenerator:
+  - name: readings-bot-env
+    envs:
+    - readings-bot.env
