@@ -11,7 +11,7 @@ patches:
 images:
   - name: spa_image_name
     newName: cr.yandex/crpnm76utfphmac4qo1t/spa
-    newTag: 1.0.36
+    newTag: 2.0.2
 
 configMapGenerator:
   - name: spa-env
